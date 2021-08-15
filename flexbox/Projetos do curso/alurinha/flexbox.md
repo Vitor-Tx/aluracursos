@@ -51,6 +51,7 @@ http://www.flexboxdefense.com/
         * flex-grow:
         * flex-shrink:
         * flex-basis:
+    * align-self
 
 
 
