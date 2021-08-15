@@ -259,15 +259,15 @@ body {
 
 @media(min-width: 1000px) {
 	.conteudoPrincipal-cursos-link {
-		margin: 1.333%;
+		margin: 1%;
 	}
 
 	.conteudoPrincipal-cursos-link:nth-child(3n) {
-		margin-right: 1.33%;
+		margin-right: 1%;
 	}
 
 	.conteudoPrincipal-cursos-link:nth-child(3n+1) {
-		margin-left: 1.333%;
+		margin-left: 1%;
 	}
 
 	.conteudoPrincipal-cursos-link:nth-child(4n) {
