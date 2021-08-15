@@ -4,6 +4,10 @@
 
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
+https://flexboxfroggy.com/
+
+http://www.flexboxdefense.com/
+
 # Propriedades de posicionamento - comparação
 
 * display: inline
@@ -25,7 +29,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
     * O display flex pode ser um pouco mais complicado de usar tendo em vista que existem diversas propriedades que vem junto da especificação flexible box, todavia tudo isso foi feito para justamente melhorar nosso código.
 
-
+![](https://i.imgur.com/mThvRZq.png)
 
 # Propriedades
 
@@ -43,8 +47,10 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
         * row-gap
 * Propriedades dos filhos
     * order:
-    * flex-grow:
-    * flex-shrink:
+    * flex
+        * flex-grow:
+        * flex-shrink:
+        * flex-basis:
 
 
 
