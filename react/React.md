@@ -44,6 +44,14 @@
   - key -> identificador único, necessário para o elemento pai
 
 - estilização de componentes
+
   - criar arquivo .css e importar no componente
   - import "./style.css";
   - className
+  - conflito de nome de classes css
+    - na transpilação, todos os arquivos
+      .css viram um só
+
+- Convenções
+  - imports limpos
+    - index.js nos componentes
