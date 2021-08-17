@@ -8,7 +8,7 @@ https://flexboxfroggy.com/
 
 http://www.flexboxdefense.com/
 
-# Propriedades de posicionamento - comparação
+## Propriedades de posicionamento - comparação
 
 * display: inline
     * Colocando display: inline nos elementos permite eles se posicionarem um do lado do outro, o problema do display: inline é que os elementos não aceitam mais que seja modificada tanto a width quanto a height. Isso limita MUITO nossas possibilidades.
@@ -31,7 +31,7 @@ http://www.flexboxdefense.com/
 
 ![](https://i.imgur.com/mThvRZq.png)
 
-# Propriedades
+## Propriedades do FlexBox
 
 * Propriedades do pai
     * display : flex

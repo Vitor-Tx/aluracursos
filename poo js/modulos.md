@@ -11,7 +11,7 @@
   - Para carregar um módulo EcmaScript, defina "type": "module" no arquivo package.json ou use a extensão .mjs
   - npm init
 
-- private : \_ ou #
+- private : \_ ou # (não está 100% implementado)
 
 - static (mesma coisa do java)
 

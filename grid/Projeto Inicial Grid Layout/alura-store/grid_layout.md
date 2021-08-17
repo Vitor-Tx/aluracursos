@@ -3,7 +3,7 @@
 ![](https://miro.medium.com/max/840/1*kuzeYL058uQGHPt8_wuoqg.png)
 
 
-# Propriedades
+## Propriedades
 
 * Propriedades do pai
     * grid-template-areas
