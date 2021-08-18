@@ -83,8 +83,17 @@
   - this.props.prop
 
 - Gerenciamento de estados
+
   - this.state = {
     var: [],
     }
   - const newState = [...this.state.var, newVar]
   - this.setState(newState)
+
+- Binding
+
+- Importando svg
+
+  - import img from "img.svg"
+  - import {ReactComponent as IMG} from "img.svg" (só funciona com create react app ou usando o SVGR)
+  - SVGR -> lib que transforma svgs em componentes react
