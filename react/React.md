@@ -99,7 +99,7 @@
 
 - Binding
 
-  - recebe uma função como parâmetro e retorna uma nova função
+  - recebe uma função como parâmetro e retorna uma nova função (função de alta ordem)
 
 - Importando svg
 
