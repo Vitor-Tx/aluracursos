@@ -40,8 +40,8 @@
 
 - loops
 
-  - map()
-  - key -> identificador único, necessário para o elemento pai
+  - map(index, elemento)
+  - key={index} -> identificador único, necessário para o elemento pai
 
 - estilização de componentes
 
@@ -78,17 +78,21 @@
 
 - Props
 
+  - Props são propriedades que passamos de um componente para outro quando o componente filho precisa de uma informação que o componente pai possui.
   - constructor(props)
   - <- componente prop={valor} ->
   - this.props.prop
 
-- Gerenciamento de estados
+- state
 
+  - é uma forma de salvar informações que serão observadas pelo Virtual Dom.
   - this.state = {
     var: [],
     }
   - const newState = [...this.state.var, newVar]
   - this.setState(newState)
+  - stateful components
+  - stateless components (priorizar)
 
 - Binding
 
@@ -97,3 +101,8 @@
   - import img from "img.svg"
   - import {ReactComponent as IMG} from "img.svg" (só funciona com create react app ou usando o SVGR)
   - SVGR -> lib que transforma svgs em componentes react
+
+- Componente Fragment
+  - tag vazia "<> </>"
+  - serve para fazer um wrapping no componente,
+    que não será estilizado.
