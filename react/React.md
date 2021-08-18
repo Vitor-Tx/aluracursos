@@ -116,9 +116,34 @@
   - separação entre visualização / renderização
   - os dados devem ser armazenados em outra entidade
   - pasta com as classes que abstraem os tipos de dados
+  - tem que fazer binding com o objeto de dados
+  - prop = {this.objeto.func.bind(this.objeto)}
 
 - Padrão Observable
+
   - observável
-    - inscrever()
-    - notificar()
+    - inscrever() -> pra chamar no componentDidMount()
+    - notificar() -> pra chamar nos métodos que fazem alteração nos observables
   - observer
+    - funçoes que chamam setState()
+
+- Ciclo de vida dos componentes
+  - todo componente react tem um ciclo de vida
+  - efeitos colaterais
+  - montagem
+    - constructor()
+    - render()
+    - atualiza o virtual DOM e referências
+    - componentDidMount
+      - recomendado colocar efeitos colaterais nele
+      - ideal para observable
+      - this.props.observable.inscrever(this.\_novoObservable.bind(this));
+      - "observable" = qualquer observable que precise
+        ser observado por esse componente
+  - atualização
+    - new props, setState() e forceUpdate() -> render()
+    - atualiza o virtual DOM e referências
+    - componentDidUpdate
+  - desmontagem
+    - componentWillunmount
+  - local state
