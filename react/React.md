@@ -53,5 +53,38 @@
       .css viram um só
 
 - Convenções
+
   - imports limpos
     - index.js nos componentes
+
+- Event Handling
+
+  - eventos
+    - onChange
+  - event handlers
+    - event.target
+    - this fica fora de contexto
+      porque é passada uma referência
+      para esse método, não o método da classe
+    - associar o handler com binding
+    - onChange={this.handler.bind(this)}
+    - button submit
+      - preventDefault
+      - stopPropagation
+
+- Passar funções entre componentes
+
+  - Pai passa função como propriedade do componente filho
+
+- Props
+
+  - constructor(props)
+  - <- componente prop={valor} ->
+  - this.props.prop
+
+- Gerenciamento de estados
+  - this.state = {
+    var: [],
+    }
+  - const newState = [...this.state.var, newVar]
+  - this.setState(newState)
