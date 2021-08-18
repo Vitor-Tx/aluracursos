@@ -5,20 +5,20 @@ import ListaDeCategorias from "./components/ListaDeCategorias";
 import "./assets/App.css";
 import "./assets/index.css";
 import Categorias from "./dados/Categorias";
-import Notas from "./dados/Notas";
+import ArrayDeNotas from "./dados/Notas";
 class App extends Component {
   constructor() {
     super();
     this.categorias = new Categorias();
-    this.notas = new Notas();
+    this.notas = new ArrayDeNotas();
   }
 
   render() {
     return (
       <section className="conteudo">
         <FormularioCadastro
-          adicionarNota={this.notas.adicionarNota}
           categorias={this.categorias.categorias}
+          adicionarNota={this.notas.adicionarNota}
         />
         <main className="conteudo-principal">
           <ListaDeCategorias

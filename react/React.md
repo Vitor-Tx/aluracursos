@@ -112,6 +112,13 @@
     que não será estilizado.
 
 - Arquitetura
+
   - separação entre visualização / renderização
   - os dados devem ser armazenados em outra entidade
   - pasta com as classes que abstraem os tipos de dados
+
+- Padrão Observable
+  - observável
+    - inscrever()
+    - notificar()
+  - observer

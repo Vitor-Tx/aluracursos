@@ -1,19 +1,26 @@
-export default class Notas {
+export default class ArrayDeNotas {
   constructor() {
     this.notas = [];
-    console.log(this.notas);
+    this._inscritos = [];
   }
 
   adicionarNota(titulo, texto, categoria) {
     const novaNota = new Nota(titulo, texto, categoria);
-    console.log(novaNota);
-    console.log(this.notas);
-    if (!this.notas) this.notas = [];
     this.notas.push(novaNota);
   }
 
   apagarNota(indice) {
     this.notas.splice(indice, 1);
+  }
+
+  inscrever(func) {
+    this._inscritos.push(func);
+  }
+
+  notificar() {
+    this._inscritos.forEach((func) => {
+      func(this.notas());
+    });
   }
 }
 
