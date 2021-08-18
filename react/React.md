@@ -93,6 +93,9 @@
   - this.setState(newState)
   - stateful components
   - stateless components (priorizar)
+  - quando um componente pai muda de estado, ele é
+    re-renderizado, e consequentemente seus filhos
+    também
 
 - Binding
 
@@ -103,6 +106,12 @@
   - SVGR -> lib que transforma svgs em componentes react
 
 - Componente Fragment
+
   - tag vazia "<> </>"
   - serve para fazer um wrapping no componente,
     que não será estilizado.
+
+- Arquitetura
+  - separação entre visualização / renderização
+  - os dados devem ser armazenados em outra entidade
+  - pasta com as classes que abstraem os tipos de dados
