@@ -99,6 +99,8 @@
 
 - Binding
 
+  - recebe uma função como parâmetro e retorna uma nova função
+
 - Importando svg
 
   - import img from "img.svg"
@@ -121,20 +123,30 @@
 
 - Padrão Observable
 
-  - observável
-    - inscrever() -> pra chamar no componentDidMount()
-    - notificar() -> pra chamar nos métodos que fazem alteração nos observables
-  - observer
-    - funçoes que chamam setState()
+  - observable -> classe com os dados
+    - inscrever() -> pra chamar no componentDidMount() do observer
+    - notificar() -> pra chamar nos métodos que fazem
+      alteração nos observables
+    - desinscrever() -> necessário pra evitar referencia
+      a null quando algum componente for apagado e algum
+      metodo notificar() tentar notificá-lo de uma mudança
+      - chamar no componentWillunmount() do observer
+  - observer -> componente que é re-renderizado quando os dados são alterados
+    - \_newObservable(observable)
+      - this.setState({ ...this.state, observable })
 
 - Ciclo de vida dos componentes
+  <a href="https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram">
+  ![](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/ogimage.png)
+  </a>
   - todo componente react tem um ciclo de vida
   - efeitos colaterais
   - montagem
     - constructor()
+      - this.\_novoObservable = this.\_novoObservable.bind(this);
     - render()
     - atualiza o virtual DOM e referências
-    - componentDidMount
+    - componentDidMount()
       - recomendado colocar efeitos colaterais nele
       - ideal para observable
       - this.props.observable.inscrever(this.\_novoObservable.bind(this));
@@ -143,7 +155,8 @@
   - atualização
     - new props, setState() e forceUpdate() -> render()
     - atualiza o virtual DOM e referências
-    - componentDidUpdate
+    - componentDidUpdate()
   - desmontagem
-    - componentWillunmount
+    - componentWillunmount()
+      - this.props.observable.desinscrever(this.\_novoObservable.bind(this));
   - local state
