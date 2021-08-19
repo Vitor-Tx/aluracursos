@@ -19,6 +19,7 @@ class ListaDeNotas extends Component {
   _novasNotas(notas) {
     this.setState({ ...this.state, notas });
   }
+
   render() {
     return (
       <ul className="lista-notas">

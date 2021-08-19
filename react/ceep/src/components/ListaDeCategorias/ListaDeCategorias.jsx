@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./estilo.css";
 class ListaDeCategorias extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = { categorias: [] };
     this._novasCategorias = this._novasCategorias.bind(this);
   }

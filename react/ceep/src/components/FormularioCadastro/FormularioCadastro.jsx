@@ -15,7 +15,7 @@ class FormularioCadastro extends Component {
   }
 
   componentWillUnmount() {
-    this.props.categoria.desinscrever(this._novasCategorias);
+    this.props.categorias.desinscrever(this._novasCategorias);
   }
 
   _novasCategorias(categorias) {

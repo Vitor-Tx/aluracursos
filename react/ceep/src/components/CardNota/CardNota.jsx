@@ -4,7 +4,6 @@ import { ReactComponent as DeleteSVG } from "../../assets/img/delete.svg";
 class CardNota extends Component {
   apagar() {
     const indice = this.props.indice;
-    console.log(`indice no cardnota: ${indice}`);
     this.props.apagarNota(indice);
   }
 
