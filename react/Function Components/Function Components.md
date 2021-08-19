@@ -8,7 +8,53 @@
 
 - Material UI
 
+  - https://material-ui.com/pt/
+  - design system pronto
   - framework de UI para o react
+  - documentação bem completa
+    - componentes
+    - layout
+    - api dos componentes(props e etc)
+
+- Componentes material UI
+
+  - Importar múltiplos componentes em uma linha
+    - import { TextField, Button, Switch } from "@material-ui/core";
+  - Containers
+
+    - component
+      - div, article, section, aside, etc
+    - maxWidth
+      - sm, md, lg, xl
+
+  - TextField
+
+    - id
+    - label
+    - variant
+      - outlined
+    - margin
+
+      - normal
+      - dense
+      - none
+
+    - FormGroup
+
+    - FormControlLabel
+
+      - control
+      - label
+
+    - Switch
+
+      - defaultChecked
+      - label
+
+    - Typography
+      - variant
+      - component
+      - align
 
 - npm audit fix
   - estudar para que serve
