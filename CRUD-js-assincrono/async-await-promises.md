@@ -1,4 +1,4 @@
-# Async/Await e Promises
+# Async/Await, Promises e Requests
 
 - XMLHttpRequest()
 
@@ -37,6 +37,10 @@
     });
     ```
 
+- async / await
+
+  - alternativa para .then()
+
 - Browser Sync
 
   - browser-sync start --server --file . --host --port 5000 --startPath admin/telas/lista_cliente.html
@@ -53,6 +57,19 @@
   const url = new URL(window.location);
   const id = url.searchParams.get(id); // obtém o parâmetro id da url exemplificada acima
   ```
+- Tratamento de erros de requests
+  - Lançamento de erro da request:
+  ```js
+  const listaClientes = () => {
+    return fetch("http://localhost:3000/profile").then((resposta) => {
+      if (resposta.ok) {
+        return resposta.json();
+      }
+      throw new Error("Não foi possível listar os clientes");
+    });
+  };
+  ```
+  - Tratamento de erros com try/catch
 
 # Event Loop
 
