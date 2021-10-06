@@ -58,7 +58,9 @@
   const id = url.searchParams.get(id); // obtém o parâmetro id da url exemplificada acima
   ```
 - Tratamento de erros de requests
+
   - Lançamento de erro da request:
+
   ```js
   const listaClientes = () => {
     return fetch("http://localhost:3000/profile").then((resposta) => {
@@ -69,7 +71,24 @@
     });
   };
   ```
+
   - Tratamento de erros com try/catch
+
+  ```js
+  formulario.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const nome = event.target.querySelector("[data-nome]").value;
+    const email = event.target.querySelector("[data-email]").value;
+
+    try {
+      await clienteService.criaCliente(nome, email);
+      window.location.href = "../telas/cadastro_concluido.html";
+    } catch (erro) {
+      console.log(erro);
+      window.location.href = "../telas/erro.html";
+    }
+  });
+  ```
 
 # Event Loop
 
