@@ -10,6 +10,7 @@
   - package.json
   - Para carregar um módulo EcmaScript, defina "type": "module" no arquivo package.json ou use a extensão .mjs
   - npm init
+  - para importar um módulo com script no html, devemos inserir 'type="module" ' na tag script
 
 - private : \_ ou # (não está 100% implementado)
 
